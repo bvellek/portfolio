@@ -1,0 +1,23 @@
+.hero-container {
+  width: 100%;
+  min-height: 20em;
+  max-height: 40em;
+  background-image: url("../img/header-img.jpg");
+  background-size: cover;
+  background-color: $bg-orange-transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.logo-container {
+  max-width: 36rem;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+
+    .svg-logo {
+      width: 100%;
+    }
+}

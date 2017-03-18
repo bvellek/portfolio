@@ -402,6 +402,9 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   font-size: 16px;
   color: #181a27;
@@ -507,3 +510,22 @@ body:hover .visually-hidden a,
 body:hover .visually-hidden button,
 body:hover .visually-hidden input {
   display: none !important; }
+
+.hero-container {
+  width: 100%;
+  min-height: 20em;
+  max-height: 40em;
+  background-image: url("../img/header-img.jpg");
+  background-size: cover;
+  background-color: rgba(180, 73, 34, 0.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.logo-container {
+  max-width: 36rem;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center; }
+  .logo-container .svg-logo {
+    width: 100%; }
