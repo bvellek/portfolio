@@ -529,3 +529,6 @@ body:hover .visually-hidden input {
   text-align: center; }
   .logo-container .svg-logo {
     width: 100%; }
+
+a:hover svg path {
+  fill: #181a27; }
