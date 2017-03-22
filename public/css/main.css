@@ -531,10 +531,13 @@ body:hover .visually-hidden input {
       min-height: 24em; } }
 
 .logo {
-  max-width: 36rem;
-  width: 95%;
+  max-width: 25rem;
+  width: 92%;
   margin: 0 auto;
   text-align: center; }
+  @media only screen and (min-width: 40em) {
+    .logo {
+      max-width: 36rem; } }
   .logo .svg-logo {
     width: 100%; }
 
@@ -567,9 +570,12 @@ body:hover .visually-hidden input {
       #about .about-container {
         flex-direction: row; } }
     #about .about-container .headshot-container {
-      max-width: 26em;
+      max-width: 20em;
       margin: 0 auto;
       padding: 0.5em; }
+      @media only screen and (min-width: 58em) {
+        #about .about-container .headshot-container {
+          max-width: 26em; } }
       #about .about-container .headshot-container img {
         border-radius: 50%;
         width: 100%; }

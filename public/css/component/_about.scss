@@ -22,9 +22,13 @@
     }
 
     .headshot-container {
-      max-width: 26em;
+      max-width: 20em;
       margin: 0 auto;
       padding: 0.5em;
+
+      @media only screen and (min-width: $medium-break) {
+        max-width: 26em;
+      }
 
       img {
         border-radius: 50%;
