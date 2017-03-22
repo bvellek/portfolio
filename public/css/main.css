@@ -430,7 +430,7 @@ h1 {
 
 h2 {
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 0.4em;
   margin-bottom: 0.4em;
   font-family: 'Oswald';
@@ -439,7 +439,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 0.4em;
   margin-bottom: 0.4em;
   font-family: 'Oswald';
@@ -479,12 +479,11 @@ em {
 a {
   color: #f8f8f8;
   font-family: 'Oswald';
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none; }
 
 a:hover {
   font-family: 'Oswald';
-  font-weight: 700;
   color: #fa8153; }
 
 ul, ol {
@@ -596,7 +595,7 @@ body:hover .visually-hidden input {
   background-image: url("../img/bg-proj.svg");
   background-size: cover;
   background-color: rgba(180, 73, 34, 0.22);
-  padding-bottom: 3em;
+  padding-bottom: 3.5em;
   margin-top: 5.5em; }
   #projects h2 {
     padding-top: 1em;
@@ -611,6 +610,8 @@ body:hover .visually-hidden input {
     cursor: pointer; }
   #projects summary:hover h3 {
     color: #F8F8F8; }
+  #projects .code-links {
+    text-transform: uppercase; }
   #projects ul {
     margin-bottom: 0; }
     #projects ul li {
