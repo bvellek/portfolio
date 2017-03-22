@@ -1,23 +1,46 @@
 .hero-container {
   width: 100%;
-  min-height: 20em;
-  max-height: 40em;
+}
+
+.logo-container {
+  width: 100%;
   background-image: url("../img/header-img.jpg");
   background-size: cover;
   background-color: $bg-orange-transparent;
+  min-height: 18em;
+  max-height: 40em;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (min-width: $tiny-break) {
+    min-height: 24em;
+  }
 }
 
+.logo {
 
-.logo-container {
   max-width: 36rem;
   width: 95%;
   margin: 0 auto;
   text-align: center;
 
-    .svg-logo {
-      width: 100%;
-    }
+  .svg-logo {
+    width: 100%;
+  }
+}
+
+
+.header-nav {
+  background-color: $text-color;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .nav-links {
+    padding: 1em 1em;
+    text-decoration: none;
+  }
 }
