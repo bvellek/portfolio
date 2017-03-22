@@ -1,3 +1,17 @@
-a:hover svg path {
-  fill: $text-color;
+#contact {
+
+  h2 {
+    margin-top: $margin-before;
+    margin-bottom: $margin-after;
+    text-align: center;
+
+    @media only screen and (min-width: $medium-break) {
+      margin-bottom: $margin-after * 1.5;
+    }
+  }
+
+
+  a:hover svg path {
+    fill: $text-color;
+  }
 }

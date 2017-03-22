@@ -1,0 +1,9 @@
+footer {
+  text-align: center;
+  background-image: url("../img/bg-proj.svg");
+  background-size: cover;
+  background-color: $bg-orange-transparent;
+  margin-top: $margin-before * 2.5;
+  @extend %font-heading-minor;
+  padding: 1.5em 1em 1em;
+}

@@ -1,0 +1,52 @@
+#projects {
+  text-align: center;
+  background-image: url("../img/bg-proj.svg");
+  background-size: cover;
+  background-color: $bg-orange-transparent;
+  padding-bottom: 3em;
+  margin-top: $margin-before * 2.5;
+
+  h2 {
+    padding-top: 1em;
+    margin-bottom: 1em;
+
+    @media only screen and (min-width: $medium-break) {
+      margin-bottom: $margin-after * 1.2;
+    }
+  }
+
+  summary,
+  summary h3 {
+    display: inline-block;
+    color: text-color;
+    cursor: pointer;
+  }
+
+  summary:hover h3{
+    color: $white;
+  }
+
+
+
+  ul {
+    margin-bottom: 0;
+
+    li {
+      margin-bottom: 0;
+      display: inline-block;
+    }
+  }
+
+}
+
+#lumen-spot {
+  background-color: $bg-proj-green;
+}
+
+#aeropressme {
+  background-color: $bg-proj-orange;
+}
+
+#elected-officials {
+  background-color: $bg-proj-green;
+}
