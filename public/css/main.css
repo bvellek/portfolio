@@ -430,7 +430,8 @@ h2 {
   margin-top: 0.4em;
   margin-bottom: 0.4em;
   font-family: 'Oswald';
-  color: #181a27; }
+  color: #181a27;
+  text-transform: uppercase; }
 
 h3 {
   font-size: 1.5em;
@@ -474,7 +475,8 @@ em {
 a {
   color: #f8f8f8;
   font-family: 'Oswald';
-  font-weight: 700; }
+  font-weight: 700;
+  text-decoration: none; }
 
 a:hover {
   font-family: 'Oswald';
@@ -488,7 +490,8 @@ ul, ol {
   font-family: 'Oswald';
   font-size: 1em;
   font-weight: 600;
-  color: #181a27; }
+  color: #181a27;
+  list-style: none; }
 
 li {
   margin-top: 0.5em;
@@ -519,11 +522,11 @@ body:hover .visually-hidden input {
   background-image: url("../img/header-img.jpg");
   background-size: cover;
   background-color: rgba(180, 73, 34, 0.22);
-  min-height: 18em;
+  height: 40vh;
   max-height: 40em;
   display: flex;
   align-items: center; }
-  @media only screen and (min-width: 25em) {
+  @media only screen and (min-width: 30em) {
     .logo-container {
       min-height: 24em; } }
 
@@ -544,8 +547,39 @@ body:hover .visually-hidden input {
   flex-direction: row;
   justify-content: center; }
   .header-nav .nav-links {
-    padding: 1em 1em;
-    text-decoration: none; }
+    padding: 1em; }
+
+#about {
+  display: flex;
+  flex-direction: column; }
+  #about h2 {
+    margin-top: 2.2em;
+    margin-bottom: 1em;
+    text-align: center; }
+    @media only screen and (min-width: 58em) {
+      #about h2 {
+        margin-bottom: 1.5em; } }
+  #about .about-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    @media only screen and (min-width: 58em) {
+      #about .about-container {
+        flex-direction: row; } }
+    #about .about-container .headshot-container {
+      max-width: 26em;
+      margin: 0 auto;
+      padding: 0.5em; }
+      #about .about-container .headshot-container img {
+        border-radius: 50%;
+        width: 100%; }
+    #about .about-container .about-content {
+      max-width: 36em;
+      margin: 0 auto;
+      padding: 1em; }
+      #about .about-container .about-content p {
+        text-align: justify;
+        margin-bottom: 0; }
 
 a:hover svg path {
   fill: #181a27; }

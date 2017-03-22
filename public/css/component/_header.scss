@@ -7,7 +7,7 @@
   background-image: url("../img/header-img.jpg");
   background-size: cover;
   background-color: $bg-orange-transparent;
-  min-height: 18em;
+  height: 40vh;
   max-height: 40em;
   display: flex;
   align-items: center;
@@ -18,7 +18,6 @@
 }
 
 .logo {
-
   max-width: 36rem;
   width: 95%;
   margin: 0 auto;
@@ -38,9 +37,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  // position: sticky;
+  // top: 10px;
 
   .nav-links {
-    padding: 1em 1em;
-    text-decoration: none;
+    padding: 1em;
   }
 }

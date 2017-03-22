@@ -1,0 +1,47 @@
+#about {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-top: $margin-before;
+    margin-bottom: $margin-after;
+    text-align: center;
+
+    @media only screen and (min-width: $medium-break) {
+      margin-bottom: $margin-after * 1.5;
+    }
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media only screen and (min-width: $medium-break) {
+      flex-direction: row;
+    }
+
+    .headshot-container {
+      max-width: 26em;
+      margin: 0 auto;
+      padding: 0.5em;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+    }
+
+
+    .about-content {
+      max-width: 36em;
+      margin: 0 auto;
+      padding: 1em;
+
+      p {
+        text-align: justify;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
