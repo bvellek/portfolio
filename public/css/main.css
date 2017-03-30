@@ -603,15 +603,39 @@ body:hover .visually-hidden input {
     @media only screen and (min-width: 58em) {
       #projects h2 {
         margin-bottom: 1.2em; } }
+  #projects .project-container {
+    padding: 3em 1em 2em; }
+  #projects details {
+    width: 90%;
+    max-width: 40em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   #projects summary,
   #projects summary h3 {
     display: inline-block;
     color: text-color;
     cursor: pointer; }
+    @media only screen and (min-width: 40em) {
+      #projects summary,
+      #projects summary h3 {
+        font-size: 1.875rem; } }
   #projects summary:hover h3 {
     color: #F8F8F8; }
+  #projects p {
+    width: 90%;
+    margin: 1em auto 1.5em; }
   #projects .code-links {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto; }
+    #projects .code-links a {
+      padding: 0 1em;
+      width: 10em; }
   #projects ul {
     margin-bottom: 0; }
     #projects ul li {
@@ -624,26 +648,65 @@ body:hover .visually-hidden input {
 #lumen-spot {
   background-color: #899080; }
   #lumen-spot #lumen-spot-1 {
-    max-width: 40em;
+    max-width: 20em;
     width: 100%; }
   #lumen-spot #lumen-spot-2 {
     display: none; }
+    @media only screen and (min-width: 58em) {
+      #lumen-spot #lumen-spot-2 {
+        display: inline-block;
+        max-width: 13em;
+        margin-right: -1em;
+        margin-left: 1em;
+        padding-top: 30px;
+        padding-bottom: 70px; } }
   #lumen-spot #lumen-spot-3 {
     display: none; }
+    @media only screen and (min-width: 58em) {
+      #lumen-spot #lumen-spot-3 {
+        display: inline-block;
+        max-width: 13em;
+        margin-left: -1em;
+        padding-top: 30px;
+        padding-bottom: 70px; } }
 
 #aeropressme {
   background-color: #C07A45; }
   #aeropressme #aeropressme-1 {
-    max-width: 40em;
-    width: 100%; }
+    min-width: 32em;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 -100%; }
+    @media only screen and (min-width: 40em) {
+      #aeropressme #aeropressme-1 {
+        max-width: 40em; } }
+    @media only screen and (min-width: 58em) {
+      #aeropressme #aeropressme-1 {
+        max-width: 50em; } }
 
 #elected-officials {
-  background-color: #899080; }
+  background-color: #899080;
+  position: relative; }
   #elected-officials #elected-officials-1 {
-    max-width: 40em;
+    max-width: 32em;
     width: 100%; }
+    @media only screen and (min-width: 40em) {
+      #elected-officials #elected-officials-1 {
+        max-width: 35em; } }
+    @media only screen and (min-width: 58em) {
+      #elected-officials #elected-officials-1 {
+        max-width: 40em;
+        position: relative; } }
   #elected-officials #elected-officials-2 {
     display: none; }
+    @media only screen and (min-width: 58em) {
+      #elected-officials #elected-officials-2 {
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        max-width: 25em;
+        top: -13em;
+        left: 15em; } }
 
 #contact h2 {
   margin-top: 2.2em;

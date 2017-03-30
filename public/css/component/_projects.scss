@@ -15,19 +15,51 @@
     }
   }
 
+  .project-container {
+    padding: 3em 1em 2em;
+  }
+
+  details {
+    width: 90%;
+    max-width: 40em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   summary,
   summary h3 {
     display: inline-block;
     color: text-color;
     cursor: pointer;
+
+    @media only screen and (min-width: $small-break) {
+      font-size: 1.875rem;
+    }
   }
 
   summary:hover h3{
     color: $white;
   }
 
+  p {
+    width: 90%;
+    margin: 1em auto 1.5em;
+  }
+
   .code-links {
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+
+    a {
+      padding: 0 1em;
+      width: 10em;
+    }
   }
 
   ul {
@@ -50,16 +82,33 @@
   background-color: $bg-proj-green;
 
   #lumen-spot-1 {
-    max-width: 40em;
+    max-width: 20em;
     width: 100%;
   }
 
   #lumen-spot-2 {
     display: none;
+
+    @media only screen and (min-width: $medium-break) {
+      display: inline-block;
+      max-width: 13em;
+      margin-right: -1em;
+      margin-left: 1em;
+      padding-top: 30px;
+      padding-bottom: 70px;
+    }
   }
 
   #lumen-spot-3 {
     display: none;
+
+    @media only screen and (min-width: $medium-break) {
+      display: inline-block;
+      max-width: 13em;
+      margin-left: -1em;
+      padding-top: 30px;
+      padding-bottom: 70px;
+    }
   }
 
 }
@@ -68,20 +117,49 @@
   background-color: $bg-proj-orange;
 
   #aeropressme-1 {
-    max-width: 40em;
+    min-width: 32em;
+    overflow: hidden;
     width: 100%;
+    margin: 0 -100%;
+
+    @media only screen and (min-width: $small-break) {
+      max-width: 40em;
+    }
+
+    @media only screen and (min-width: $medium-break) {
+      max-width: 50em;
+    }
   }
 }
 
 #elected-officials {
   background-color: $bg-proj-green;
+  position: relative;
 
   #elected-officials-1 {
-    max-width: 40em;
+    max-width: 32em;
     width: 100%;
+
+    @media only screen and (min-width: $small-break) {
+      max-width: 35em;
+    }
+
+    @media only screen and (min-width: $medium-break) {
+      max-width: 40em;
+      position: relative;
+    }
   }
 
   #elected-officials-2 {
     display: none;
+
+    @media only screen and (min-width: $medium-break) {
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+      max-width: 25em;
+      top: -13em;
+      left: 15em;
+    }
   }
 }
