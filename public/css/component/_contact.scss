@@ -36,7 +36,7 @@
         font-size: 0.9em;
 
         &:hover {
-          color: $text-color;
+          color: rgba( $text-color, .7 );
         }
       }
     }

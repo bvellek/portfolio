@@ -618,8 +618,18 @@ body:hover .visually-hidden input {
       margin-bottom: 0;
       display: inline-block; }
 
+.img-container {
+  width: 100%; }
+
 #lumen-spot {
   background-color: #899080; }
+  #lumen-spot #lumen-spot-1 {
+    max-width: 40em;
+    width: 100%; }
+  #lumen-spot #lumen-spot-2 {
+    display: none; }
+  #lumen-spot #lumen-spot-3 {
+    display: none; }
 
 #aeropressme {
   background-color: #C07A45; }
@@ -655,7 +665,7 @@ body:hover .visually-hidden input {
       color: #B44922;
       font-size: 0.9em; }
       #contact .contact-container .contact-content a:hover {
-        color: #181a27; }
+        color: rgba(24, 26, 39, 0.7); }
   #contact .contact-container .contact-social {
     margin-top: 2.2em;
     display: flex;

@@ -41,8 +41,27 @@
 
 }
 
+
+.img-container {
+  width: 100%;
+}
+
 #lumen-spot {
   background-color: $bg-proj-green;
+
+  #lumen-spot-1 {
+    max-width: 40em;
+    width: 100%;
+  }
+
+  #lumen-spot-2 {
+    display: none;
+  }
+
+  #lumen-spot-3 {
+    display: none;
+  }
+
 }
 
 #aeropressme {
