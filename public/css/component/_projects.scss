@@ -66,8 +66,22 @@
 
 #aeropressme {
   background-color: $bg-proj-orange;
+
+  #aeropressme-1 {
+    max-width: 40em;
+    width: 100%;
+  }
 }
 
 #elected-officials {
   background-color: $bg-proj-green;
+
+  #elected-officials-1 {
+    max-width: 40em;
+    width: 100%;
+  }
+
+  #elected-officials-2 {
+    display: none;
+  }
 }

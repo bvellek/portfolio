@@ -633,9 +633,17 @@ body:hover .visually-hidden input {
 
 #aeropressme {
   background-color: #C07A45; }
+  #aeropressme #aeropressme-1 {
+    max-width: 40em;
+    width: 100%; }
 
 #elected-officials {
   background-color: #899080; }
+  #elected-officials #elected-officials-1 {
+    max-width: 40em;
+    width: 100%; }
+  #elected-officials #elected-officials-2 {
+    display: none; }
 
 #contact h2 {
   margin-top: 2.2em;
