@@ -602,10 +602,8 @@ body:hover .visually-hidden input {
   margin-top: 5.5em; }
   #projects h2 {
     padding-top: 1.2em;
+    margin-top: 2.2em;
     margin-bottom: 1em; }
-    @media only screen and (min-width: 58em) {
-      #projects h2 {
-        margin-bottom: 1.2em; } }
   #projects .project-container {
     padding: 2em 1em 2em; }
   #projects details {
@@ -646,7 +644,7 @@ body:hover .visually-hidden input {
       display: inline-block; }
 
 .img-container {
-  width: 100%; }
+  max-width: 100%; }
 
 #lumen-spot {
   background-color: #899080; }
@@ -676,10 +674,8 @@ body:hover .visually-hidden input {
 #aeropressme {
   background-color: #C07A45; }
   #aeropressme #aeropressme-1 {
-    min-width: 32em;
-    overflow: hidden;
-    width: 100%;
-    margin: 0 -100%; }
+    max-width: 32em;
+    width: 100%; }
     @media only screen and (min-width: 40em) {
       #aeropressme #aeropressme-1 {
         max-width: 40em; } }
@@ -728,7 +724,7 @@ body:hover .visually-hidden input {
     #contact .contact-container {
       max-width: 35em; } }
   #contact .contact-container .contact-content {
-    margin: 2em auto 0;
+    margin: 1.5em auto 0;
     padding: 0 1em;
     text-align: justify; }
     #contact .contact-container .contact-content h3 {
@@ -750,12 +746,12 @@ body:hover .visually-hidden input {
       fill: #181a27; }
 
 #contact .resume-link {
-  padding: 0.2em 0.5em;
+  padding: 0.1em 0.5em;
   background-color: rgba(180, 73, 34, 0.7);
   width: 7.2em;
   border-radius: 3px;
   text-align: center;
-  margin: 2em auto 0; }
+  margin: 1.5em auto 1.5em; }
   #contact .resume-link:hover {
     background-color: rgba(24, 26, 39, 0.7); }
   #contact .resume-link #resume {
