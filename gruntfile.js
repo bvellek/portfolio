@@ -4,7 +4,7 @@ module.exports = function(grunt) {
       theme: './public/',
       css: './css/',
       js: './js/',
-      assets:'assets/'
+      // assets:'assets/'
     },
     sass: {
       dev: {
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: '<%= dirs.theme %><%= dirs.css %>main.css',
-        dest: '<%= dirs.assets %><%= dirs.css %>main.css'
+        dest: '<%= dirs.theme %><%= dirs.css %>main.post.css'
       }
     },
     cssmin: {
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           report: 'gzip'
         },
         files: {
-          '<%= dirs.assets %><%= dirs.css %>main.min.css': '<%= dirs.assets %><%= dirs.css %>main.css',
+          '<%= dirs.theme %><%= dirs.css %>main.post.min.css': '<%= dirs.theme %><%= dirs.css %>main.post.css',
         }
       },
     },
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          '<%= dirs.assets %><%= dirs.js %>app.min.js': ['<%= dirs.theme %><%= dirs.js %>app.js']
+          '<%= dirs.theme %><%= dirs.js %>app.min.js': ['<%= dirs.theme %><%= dirs.js %>app.js']
         }
       }
     },
@@ -71,5 +71,5 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('default',['watch']);
-  grunt.registerTask('build',['sass', 'postcss', 'cssmin']);
+  grunt.registerTask('build',['sass', 'postcss', 'cssmin', 'uglify']);
 };
