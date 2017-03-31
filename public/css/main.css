@@ -551,8 +551,11 @@ body:hover .visually-hidden input {
   min-height: 3em;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
-  .header-nav .nav-links {
+  justify-content: center;
+  position: sticky;
+  top: -10px;
+  z-index: 100; }
+  .header-nav .nav-link {
     padding: 1em; }
 
 #about {
@@ -598,13 +601,13 @@ body:hover .visually-hidden input {
   padding-bottom: 3.5em;
   margin-top: 5.5em; }
   #projects h2 {
-    padding-top: 1em;
+    padding-top: 1.2em;
     margin-bottom: 1em; }
     @media only screen and (min-width: 58em) {
       #projects h2 {
         margin-bottom: 1.2em; } }
   #projects .project-container {
-    padding: 3em 1em 2em; }
+    padding: 2em 1em 2em; }
   #projects details {
     width: 90%;
     max-width: 40em;
@@ -628,16 +631,16 @@ body:hover .visually-hidden input {
     width: 90%;
     margin: 1em auto 1.5em; }
   #projects .code-links {
+    width: 100%;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 0 auto; }
+    justify-content: center; }
     #projects .code-links a {
-      padding: 0 1em;
-      width: 10em; }
+      padding: 0 1em; }
   #projects ul {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding: 0; }
     #projects ul li {
       margin-bottom: 0;
       display: inline-block; }
@@ -745,6 +748,19 @@ body:hover .visually-hidden input {
       margin: 0 1.2em; }
     #contact .contact-container .contact-social a:hover svg ellipse {
       fill: #181a27; }
+
+#contact .resume-link {
+  padding: 0.2em 0.5em;
+  background-color: rgba(180, 73, 34, 0.7);
+  width: 7.2em;
+  border-radius: 3px;
+  text-align: center;
+  margin: 2em auto 0; }
+  #contact .resume-link:hover {
+    background-color: rgba(24, 26, 39, 0.7); }
+  #contact .resume-link #resume {
+    color: #F8F8F8;
+    font-size: 1.2em; }
 
 footer {
   text-align: center;

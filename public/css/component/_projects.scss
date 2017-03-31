@@ -4,10 +4,11 @@
   background-size: cover;
   background-color: $bg-orange-transparent;
   padding-bottom: 3.5em;
+  // padding-top: 1em;
   margin-top: $margin-before * 2.5;
 
   h2 {
-    padding-top: 1em;
+    padding-top: 1.2em;
     margin-bottom: 1em;
 
     @media only screen and (min-width: $medium-break) {
@@ -16,7 +17,7 @@
   }
 
   .project-container {
-    padding: 3em 1em 2em;
+    padding: 2em 1em 2em;
   }
 
   details {
@@ -50,20 +51,20 @@
   }
 
   .code-links {
+    width: 100%;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 auto;
 
     a {
       padding: 0 1em;
-      width: 10em;
     }
   }
 
   ul {
     margin-bottom: 0;
+    padding: 0;
 
     li {
       margin-bottom: 0;
