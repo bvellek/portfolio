@@ -49,6 +49,10 @@
 
       a {
         margin: 0 1.2em;
+
+        svg ellipse {
+            transition: fill 0.5s ease-in;
+        }
       }
 
 
@@ -65,6 +69,7 @@
     border-radius: 3px;
     text-align: center;
     margin: 1.5em auto 1.5em;
+    transition: background-color 0.5s ease-in;
 
     &:hover {
       background-color: rgba( $text-color, .7 );

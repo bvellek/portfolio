@@ -1,3 +1,5 @@
+$transition: color 0.5s ease-in;
+
 * {
 	box-sizing: border-box;
 }
@@ -85,6 +87,7 @@ a {
 	font-family: 'Oswald';
 	font-weight: 600;
 	text-decoration: none;
+	transition: $transition;
 }
 
 a:hover {
