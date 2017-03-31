@@ -641,8 +641,10 @@ body:hover .visually-hidden input {
         font-size: 1.875rem; } }
   #projects summary:hover h3 {
     color: #F8F8F8; }
+
+@-moz-document url-prefix() {
   #projects summary:hover {
-    color: #F8F8F8; }
+    color: #F8F8F8; } }
   #projects p {
     width: 90%;
     margin: 1em auto 1.5em; }

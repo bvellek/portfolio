@@ -45,6 +45,7 @@
       font-size: 1.875rem;
     }
   }
+
   summary h3 {
     display: inline-block;
     color: $text-color;
@@ -60,8 +61,10 @@
     color: $white;
   }
 
-  summary:hover {
-    color: $white;
+  @-moz-document url-prefix() {
+    summary:hover {
+      color: $white;
+    }
   }
 
   p {
