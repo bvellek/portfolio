@@ -35,7 +35,16 @@
     100% {opacity: 1}
   }
 
-  summary,
+  summary {
+    display: list-item;
+    color: $text-color;
+    cursor: pointer;
+    transition: $transition;
+
+    @media only screen and (min-width: $small-break) {
+      font-size: 1.875rem;
+    }
+  }
   summary h3 {
     display: inline-block;
     color: $text-color;
@@ -47,11 +56,11 @@
     }
   }
 
-  summary {
-    display: list-item;
+  summary:hover h3{
+    color: $white;
   }
 
-  summary:hover h3{
+  summary:hover {
     color: $white;
   }
 

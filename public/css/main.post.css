@@ -638,19 +638,25 @@ body:hover .visually-hidden input {
     opacity: 0; }
   100% {
     opacity: 1; } }
-  #projects summary,
+  #projects summary {
+    display: list-item;
+    color: #181a27;
+    cursor: pointer;
+    transition: color 0.5s ease-in; }
+    @media only screen and (min-width: 40em) {
+      #projects summary {
+        font-size: 1.875rem; } }
   #projects summary h3 {
     display: inline-block;
     color: #181a27;
     cursor: pointer;
     transition: color 0.5s ease-in; }
     @media only screen and (min-width: 40em) {
-      #projects summary,
       #projects summary h3 {
         font-size: 1.875rem; } }
-  #projects summary {
-    display: list-item; }
   #projects summary:hover h3 {
+    color: #F8F8F8; }
+  #projects summary:hover {
     color: #F8F8F8; }
   #projects p {
     width: 90%;
