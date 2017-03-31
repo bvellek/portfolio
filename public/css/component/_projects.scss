@@ -26,12 +26,8 @@
     align-items: center;
   }
 
-  summary {
-    display: list-item;
-  }
-  
   details[open] summary ~ * {
-    animation: fade 1s ease-in;
+    animation: fade 0.9s ease-in;
   }
 
   @keyframes fade {
@@ -42,13 +38,17 @@
   summary,
   summary h3 {
     display: inline-block;
-    color: text-color;
+    color: $text-color;
     cursor: pointer;
     transition: $transition;
 
     @media only screen and (min-width: $small-break) {
       font-size: 1.875rem;
     }
+  }
+
+  summary {
+    display: list-item;
   }
 
   summary:hover h3{

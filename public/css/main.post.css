@@ -630,10 +630,8 @@ body:hover .visually-hidden input {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-  #projects summary {
-    display: list-item; }
   #projects details[open] summary ~ * {
-    animation: fade 1s ease-in; }
+    animation: fade 0.9s ease-in; }
 
 @keyframes fade {
   0% {
@@ -643,13 +641,15 @@ body:hover .visually-hidden input {
   #projects summary,
   #projects summary h3 {
     display: inline-block;
-    color: text-color;
+    color: #181a27;
     cursor: pointer;
     transition: color 0.5s ease-in; }
     @media only screen and (min-width: 40em) {
       #projects summary,
       #projects summary h3 {
         font-size: 1.875rem; } }
+  #projects summary {
+    display: list-item; }
   #projects summary:hover h3 {
     color: #F8F8F8; }
   #projects p {
