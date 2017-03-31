@@ -615,6 +615,14 @@ body:hover .visually-hidden input {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  #projects details[open] summary ~ * {
+    animation: fade 1s ease-in; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
   #projects summary,
   #projects summary h3 {
     display: inline-block;
