@@ -26,6 +26,10 @@
     align-items: center;
   }
 
+  summary {
+    display: list-item;
+  }
+  
   details[open] summary ~ * {
     animation: fade 1s ease-in;
   }

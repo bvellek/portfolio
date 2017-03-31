@@ -615,6 +615,8 @@ body:hover .visually-hidden input {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  #projects summary {
+    display: list-item; }
   #projects details[open] summary ~ * {
     animation: fade 1s ease-in; }
 

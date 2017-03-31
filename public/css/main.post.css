@@ -630,6 +630,8 @@ body:hover .visually-hidden input {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+  #projects summary {
+    display: list-item; }
   #projects details[open] summary ~ * {
     animation: fade 1s ease-in; }
 
