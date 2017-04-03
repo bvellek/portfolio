@@ -571,7 +571,8 @@ body:hover .visually-hidden input {
   -ms-flex-direction: column;
       flex-direction: column; }
   #about h2 {
-    margin-top: 2.2em;
+    margin-top: 1em;
+    padding-top: 1.2em;
     margin-bottom: 1em;
     text-align: center; }
     @media only screen and (min-width: 58em) {
@@ -751,12 +752,12 @@ body:hover .visually-hidden input {
         left: 15em; } }
 
 #contact h2 {
-  margin-top: 2.2em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-top: 1.2em;
   text-align: center; }
-  @media only screen and (min-width: 58em) {
+  @media only screen and (min-width: 40em) {
     #contact h2 {
-      margin-bottom: 1.5em; } }
+      margin-bottom: 1.2em; } }
 
 #contact .contact-container {
   display: -ms-flexbox;
@@ -765,7 +766,7 @@ body:hover .visually-hidden input {
       flex-direction: column;
   max-width: 26em;
   margin: 0 auto; }
-  @media only screen and (min-width: 58em) {
+  @media only screen and (min-width: 40em) {
     #contact .contact-container {
       max-width: 35em; } }
   #contact .contact-container .contact-content {
