@@ -3,7 +3,6 @@
   h2 {
     margin-top: $margin-before - 1.2em;
     padding-top: 1.2em;
-    // margin-bottom: $margin-after;
     text-align: center;
 
     @media only screen and (min-width: $small-break) {
@@ -33,7 +32,7 @@
       }
 
       a {
-        color: $bg-orange;
+        color: rgba($icon-color, 0.8);
         font-size: 0.9em;
 
         &:hover {

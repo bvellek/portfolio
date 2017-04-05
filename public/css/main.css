@@ -618,7 +618,7 @@ body:hover .visually-hidden input {
     justify-content: center;
     align-items: center; }
   #projects details[open] summary ~ * {
-    animation: fade 0.9s ease-in; }
+    animation: fade 0.6s ease-in; }
 
 @keyframes fade {
   0% {
@@ -759,7 +759,7 @@ body:hover .visually-hidden input {
     #contact .contact-container .contact-content p {
       margin: 0.625em 0; }
     #contact .contact-container .contact-content a {
-      color: #B44922;
+      color: rgba(180, 73, 34, 0.8);
       font-size: 0.9em; }
       #contact .contact-container .contact-content a:hover {
         color: rgba(24, 26, 39, 0.7); }
@@ -791,6 +791,7 @@ body:hover .visually-hidden input {
 footer {
   text-align: center;
   background-image: url("../img/bg-proj.svg");
+  background-attachment: fixed;
   background-size: cover;
   background-color: rgba(180, 73, 34, 0.22);
   margin-top: 5.5em;
