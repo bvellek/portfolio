@@ -182,7 +182,7 @@
   <script src="./public/js/app.min.js"></script>
   <script src="./public/js/modernizr.3.4.0.js"></script>
   <script>
-    if (Modernizr.details) {
+    if (!Modernizr.details) {
       document.body.appendChild((function () {
         var script = document.createElement('script');
         script.src = "./public/js/detailsPoly.js";
