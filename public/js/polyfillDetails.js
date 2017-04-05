@@ -17,7 +17,8 @@ void (function (root, factory) {
   injectStyle('details-polyfill-style',
     'html.no-details ' + DETAILS + ':not([open]) > :not(' + SUMMARY + ') { display: none; }\n' +
     'html.no-details ' + DETAILS + ' > ' + SUMMARY + ':before { content: "▶"; display: inline-block; font-size: .8em; width: 1.5em; }\n' +
-    'html.no-details ' + DETAILS + '[open] > ' + SUMMARY + ':before { content: "▼"; }')
+    'html.no-details ' + DETAILS + '[open] > ' + SUMMARY + ':before { content: "▼"; }' +
+    DETAILS + SUMMARY + '::-webkit-details-marker { display:none; }')
 
   /*
    * Click handler for `<summary>` tags
