@@ -598,6 +598,7 @@ body:hover .visually-hidden input {
 #projects {
   text-align: center;
   background-image: url("../img/bg-proj.svg");
+  background-attachment: fixed;
   background-size: cover;
   background-color: rgba(180, 73, 34, 0.22);
   padding-bottom: 3.5em;

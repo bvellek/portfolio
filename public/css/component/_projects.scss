@@ -1,6 +1,7 @@
 #projects {
   text-align: center;
   background-image: url("../img/bg-proj.svg");
+  background-attachment: fixed;
   background-size: cover;
   background-color: $bg-orange-transparent;
   padding-bottom: 3.5em;
@@ -26,15 +27,6 @@
     align-items: center;
   }
 
-// details:not([open]) summary ~ * {
-//
-//   opacity: 0;
-// }
-//
-//   details[open]  summary ~ * {
-//     transition: opacity ease-in .9;
-//     opacity: 1;
-//   }
   details[open] summary ~ * {
     animation: fade 0.9s ease-in;
   }
