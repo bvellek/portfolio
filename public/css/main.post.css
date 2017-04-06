@@ -429,7 +429,7 @@ h1 {
   font-family: 'Oswald'; }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   font-weight: 600;
   margin-top: 0.4em;
   margin-bottom: 0.4em;
@@ -469,6 +469,9 @@ p {
   margin-bottom: 1.5em;
   font-family: 'Lusitana';
   font-weight: 400; }
+  @media only screen and (min-width: 58em) {
+    p {
+      font-size: 1.1em; } }
 
 strong {
   font-weight: 700; }
@@ -569,7 +572,11 @@ body:hover .visually-hidden input {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  max-width: 82em;
+  margin: 0 auto; }
   #about h2 {
     margin-top: 1em;
     padding-top: 1.2em;
@@ -601,7 +608,13 @@ body:hover .visually-hidden input {
     #about .about-container .about-content {
       max-width: 36em;
       margin: 0 auto;
-      padding: 1em; }
+      padding: 1em;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center; }
       #about .about-container .about-content p {
         text-align: justify;
         margin-bottom: 0; }
@@ -700,7 +713,8 @@ body:hover .visually-hidden input {
         margin-right: -1em;
         margin-left: 1em;
         padding-top: 30px;
-        padding-bottom: 70px; } }
+        padding-bottom: 70px;
+        filter: drop-shadow(10px 10px 40px #1f1f1f); } }
   #lumen-spot #lumen-spot-3 {
     display: none; }
     @media only screen and (min-width: 58em) {
@@ -709,7 +723,8 @@ body:hover .visually-hidden input {
         max-width: 13em;
         margin-left: -1em;
         padding-top: 30px;
-        padding-bottom: 70px; } }
+        padding-bottom: 70px;
+        filter: drop-shadow(5px 10px 40px #030303); } }
 
 #aeropressme {
   background-color: #C07A45; }
@@ -750,7 +765,8 @@ body:hover .visually-hidden input {
         z-index: 10;
         max-width: 25em;
         top: -13em;
-        left: 15em; } }
+        left: 15em;
+        filter: drop-shadow(10px 10px 30px black); } }
 
 #contact h2 {
   margin-top: 1em;
