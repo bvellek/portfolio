@@ -1,6 +1,9 @@
 #about {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  max-width: 82em;
+  margin: 0 auto;
 
   h2 {
     margin-top: $margin-before - 1.2em;
@@ -42,6 +45,9 @@
       max-width: 36em;
       margin: 0 auto;
       padding: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       p {
         text-align: justify;
