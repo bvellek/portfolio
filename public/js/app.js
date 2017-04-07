@@ -1,4 +1,4 @@
-var navLinks = document.querySelector("nav");
+var navLinks = document.querySelectorAll(".scroll-links");
 
 navLinks.addEventListener('click', scroll)
 
