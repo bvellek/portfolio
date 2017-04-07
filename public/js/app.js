@@ -23,7 +23,7 @@
 		selector: '[data-scroll]',
 		selectorHeader: null,
 		speed: 500,
-		easing: 'easeInOutCubic',
+		easing: 'easeOutQuad',
 		offset: 0,
 		callback: function () {}
 	};
