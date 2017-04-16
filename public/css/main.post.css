@@ -566,7 +566,11 @@ body:hover .visually-hidden input {
   top: -10px;
   z-index: 100; }
   .header-nav .nav-link {
-    padding: 1em; }
+    padding: 1em;
+    font-size: 0.9em; }
+    @media only screen and (min-width: 30em) {
+      .header-nav .nav-link {
+        font-size: 1em; } }
 
 #about {
   display: -ms-flexbox;
@@ -577,38 +581,35 @@ body:hover .visually-hidden input {
       justify-content: center;
   max-width: 82em;
   margin: 0 auto; }
-  #about h2 {
-    margin-top: 1em;
-    padding-top: 1.2em;
-    margin-bottom: 1em;
-    text-align: center; }
-    @media only screen and (min-width: 58em) {
-      #about h2 {
-        margin-bottom: 1.5em; } }
   #about .about-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    margin: 2.2em auto 0;
+    padding: 1em 1em 0; }
     @media only screen and (min-width: 58em) {
       #about .about-container {
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row;
+        padding-top: 2em; } }
     #about .about-container .headshot-container {
       max-width: 20em;
       margin: 0 auto;
       padding: 0.5em; }
       @media only screen and (min-width: 58em) {
         #about .about-container .headshot-container {
-          max-width: 26em; } }
+          max-width: 26em;
+          padding-left: 2em;
+          padding-top: 1em; } }
       #about .about-container .headshot-container img {
         border-radius: 50%;
         width: 100%; }
     #about .about-container .about-content {
       max-width: 36em;
-      margin: 0 auto;
-      padding: 1em;
+      margin: 0 auto 1em;
+      padding: 1.2em 1em 1em;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -625,10 +626,10 @@ body:hover .visually-hidden input {
   background-size: cover;
   background-color: rgba(180, 73, 34, 0.22);
   padding-bottom: 3.5em;
-  margin-top: 5.5em; }
+  margin-top: 5.06em; }
   #projects h2 {
     padding-top: 1.2em;
-    margin-top: 2.2em;
+    margin-top: 2em;
     margin-bottom: 1em; }
   #projects .project-container {
     padding: 2em 1em 2em; }

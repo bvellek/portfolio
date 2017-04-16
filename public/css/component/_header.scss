@@ -47,5 +47,11 @@
 
   .nav-link {
     padding: 1em;
+    font-size: 0.9em;
+
+    @media only screen and (min-width: $tiny-break) {
+      font-size: 1em;
+    }
+
   }
 }
