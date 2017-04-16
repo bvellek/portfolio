@@ -5,24 +5,16 @@
   max-width: 82em;
   margin: 0 auto;
 
-  h2 {
-    margin-top: $margin-before - 1.2em;
-    padding-top: 1.2em;
-    margin-bottom: $margin-after;
-    text-align: center;
-
-    @media only screen and (min-width: $medium-break) {
-      margin-bottom: $margin-after * 1.5;
-    }
-  }
-
   .about-container {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: $margin-before auto 0;
+    padding: 1em 1em 0;
 
     @media only screen and (min-width: $medium-break) {
       flex-direction: row;
+      padding-top: 2em;
     }
 
     .headshot-container {
@@ -32,6 +24,8 @@
 
       @media only screen and (min-width: $medium-break) {
         max-width: 26em;
+        padding-left: 2em;
+        padding-top: 1em;
       }
 
       img {
@@ -40,11 +34,10 @@
       }
     }
 
-
     .about-content {
       max-width: 36em;
-      margin: 0 auto;
-      padding: 1em;
+      margin: 0 auto $margin-after;
+      padding: 1.2em 1em 1em;
       display: flex;
       flex-direction: column;
       justify-content: center;
