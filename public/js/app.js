@@ -1,4 +1,11 @@
+
+
 (function (root, factory) {
+	// set date for copyright
+	var yearNode = document.querySelector('#year')
+	yearNode.innerHTML = new Date().getFullYear();
+
+
 	if ( typeof define === 'function' && define.amd ) {
 		define([], factory(root));
 	} else if ( typeof exports === 'object' ) {
