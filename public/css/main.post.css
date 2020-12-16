@@ -564,7 +564,6 @@ body:hover .visually-hidden input {
       flex-direction: row;
   -ms-flex-pack: center;
       justify-content: center;
-  position: -webkit-sticky;
   position: sticky;
   top: -10px;
   z-index: 100; }
